@@ -47,6 +47,7 @@
               </small>
             </div>
 
+            <!-- Password character inclusion switches -->
             <h5>Password character inclusions</h5>
             <small class="text-muted">Minimum one selection required</small>
             <div class="row">
@@ -83,76 +84,9 @@
           </form>
         </div>
 
-        <!-- Original 'Generate Password' button -->
+        <!-- 'Generate Password' button -->
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal to set Password Criteria -->
-    <div class="modal fade" id="passwordCriteria" tabindex="-1" role="dialog" aria-labelledby="passwordCriteriaTitle" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="passwordCriteriaTitle">Set Password Criteria</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form action="">
-
-              <!-- Specify password length form-group -->
-              <div class="form-group">
-                <label for="passwordLength">Specify desired password length</label>
-                <input type="number" min="8" max="128" class="form-control" id="passwordLength" aria-describedby="passwordLengthHelp">
-                <small id="passwordLengthHelp" class="text-muted">
-                  Choose a length of at least 8 characters and no more than 128 characters
-                </small>
-              </div>
-
-              <hr>
-
-              <h5>Password character inclusions</h5>
-              <small class="text-muted">Minimum one selection required</small>
-              <div class="row">
-                <div class="col col-lg-6">
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="lowercase">
-                    <label class="custom-control-label" for="lowercase">Lowercase</label>
-                  </div>
-                </div>
-
-                <div class="col col-lg-6">
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="uppercase">
-                    <label class="custom-control-label" for="uppercase">Uppercase</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col col-lg-6">
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="numbers">
-                    <label class="custom-control-label" for="numbers">Numbers</label>
-                  </div>
-                </div>
-                <div class="col col-lg-6">
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="special">
-                    <label class="custom-control-label" for="special">Special</label>
-                  </div>
-                </div>
-              </div>
-
-            </form>
-          </div>
-
-          <div class="modal-footer d-flex justify-content-center">
-            <button type="submit" class="btn" id="generate" data-dismiss="modal">Generate Password</button>
-          </div>
         </div>
       </div>
     </div>

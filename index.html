@@ -23,27 +23,30 @@
     </div>
     <!-- Banner for LG to XL displays -->
     <div class="banner text-center d-none d-lg-block">
-      <i class="fas fa-shield-alt fa-10x"></i>
+      <i class="fas fa-shield-alt fa-8x"></i>
     </div>
 
     <div class="wrapper">
 
-      <div class="card">
+      <div class="card mb-3">
         <div class="card-header">
           <h1>Password Generator</h2>
         </div>
 
         <div class="card-body">
-          <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+          <div class="form-group my-3">
+            <label for="password">Your Secure Password</label>
+            <input type="text" class="form-control" id="password" aria-label="Generated Password">
+          </div>
 
           <form action="">
 
             <!-- Specify password length form-group -->
             <div class="form-group my-5">
               <label for="passwordLength">Specify desired password length</label>
-              <input type="number" min="8" max="128" class="form-control" id="passwordLength" aria-describedby="passwordLengthHelp">
+              <input type="number" min="8" max="32" class="form-control" id="passwordLength" aria-describedby="passwordLengthHelp">
               <small id="passwordLengthHelp" class="text-muted">
-                Choose a length of at least 8 characters and no more than 128 characters
+                Choose a length of at least 8 characters and no more than 32 characters
               </small>
             </div>
 
@@ -53,14 +56,14 @@
             <div class="row">
               <div class="col col-lg-6">
                 <div class="custom-control custom-switch">
-                  <input type="checkbox" class="custom-control-input" id="lowercase">
+                  <input type="checkbox" class="custom-control-input" id="lowercase" checked>
                   <label class="custom-control-label" for="lowercase">Lowercase</label>
                 </div>
               </div>
 
               <div class="col col-lg-6">
                 <div class="custom-control custom-switch">
-                  <input type="checkbox" class="custom-control-input" id="uppercase">
+                  <input type="checkbox" class="custom-control-input" id="uppercase" checked>
                   <label class="custom-control-label" for="uppercase">Uppercase</label>
                 </div>
               </div>
@@ -69,13 +72,13 @@
             <div class="row">
               <div class="col col-lg-6">
                 <div class="custom-control custom-switch">
-                  <input type="checkbox" class="custom-control-input" id="numbers">
+                  <input type="checkbox" class="custom-control-input" id="numbers" checked>
                   <label class="custom-control-label" for="numbers">Numbers</label>
                 </div>
               </div>
               <div class="col col-lg-6">
                 <div class="custom-control custom-switch">
-                  <input type="checkbox" class="custom-control-input" id="special">
+                  <input type="checkbox" class="custom-control-input" id="special" checked>
                   <label class="custom-control-label" for="special">Special</label>
                 </div>
               </div>

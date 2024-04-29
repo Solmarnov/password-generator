@@ -5,9 +5,7 @@
 }
 
 html,
-body,
-.wrapper {
-  height: 100%;
+body {
   margin: 0;
   padding: 0;
 }
@@ -101,8 +99,8 @@ form h5 {
   border: none;
   background-color: #00305f;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px 
+    rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
   font-size: 1rem;
@@ -133,7 +131,7 @@ button[disabled] {
   appearance: none;
   border: none;
   display: block;
-  height: 6rem;
+  height: 3rem;
   width: 100%;
   padding-top: 10px;
   padding-left: 10px;
@@ -141,8 +139,6 @@ button[disabled] {
   padding-bottom: 10px;
   font-size: 1rem;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
   border: 2px solid #00305f;
   border-radius: 6px;
   resize: vertical;
